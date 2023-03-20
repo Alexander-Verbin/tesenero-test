@@ -1,0 +1,27 @@
+@import "../../SCSS/.mixins";
+
+.MainBlock{
+	background: linear-gradient(111.04deg, #E2E2E2 0.39%, rgba(255, 255, 255, 0) 86.46%);
+
+	&__container{
+		padding-top: 75px;
+		padding-bottom: 93px;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		gap: 22px;
+		margin-bottom: 69px;
+	}
+
+	&__content{
+		position: relative;
+	}
+
+	&__block{
+		display: flex;
+		align-items: flex-start;
+	}
+}
+
+

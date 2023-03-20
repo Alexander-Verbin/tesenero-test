@@ -1,0 +1,32 @@
+.header{
+	background: #fff;
+
+	&__container{
+		padding-top: 30px;
+		padding-bottom: 37px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__left{
+		display: flex;
+		align-items: center;
+		gap: 89px;
+	}
+
+	&__logo{
+		max-width: 304px;
+	}
+
+	&__logo_icon{
+		display: block;
+		width: 100%;
+		height: auto;
+		max-height: 92px;
+	}
+
+	&__rigth{
+		display: block;
+	}
+}

@@ -1,0 +1,10 @@
+@use "sass:math";
+
+//Перевод пикселей в емы
+@function px-to-em($px, $context: 16) {
+	@return math.div($px, $context) * 1em;
+}
+//Перевод пикслей в проценты для line-height
+@function px-to-per($lh, $fs) {
+	@return math.div($lh, $fs) * 100%;
+}
