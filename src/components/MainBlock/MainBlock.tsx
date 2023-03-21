@@ -8,6 +8,7 @@ import two from "../../assets/img/icons/icon2.svg"
 import three from "../../assets/img/icons/icon3.svg"
 import four from "../../assets/img/icons/icon4.svg"
 import berry from "../../assets/img/berry.png"
+import {Slider} from "../Slider/Slider";
 
 export const MainBlock: React.FC = () => {
 	return (
@@ -43,6 +44,7 @@ export const MainBlock: React.FC = () => {
 						</div>
 					</div>
 				</div>
+				<Slider/>
 			</div>
 		</div>
 	)
