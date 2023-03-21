@@ -7,15 +7,12 @@
 	justify-content: center;
 	gap: 22px;
 
+
 	&__icon{
 		width: 100%;
 		max-width: 96px;
 		height: auto;
 		max-height: 87px;
-
-		use{
-			background: rgba(255,255,255,0);
-		}
 	}
 
 	&__text{

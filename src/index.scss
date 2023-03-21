@@ -95,9 +95,33 @@ input::-webkit-inner-spin-button {
 		height: 4px;
 		background: #00C368;
 	}
+
+	@media (max-width: 767px){
+		font-size: px-to-em(24);
+		line-height: px-to-per(28,24);
+	}
 }
 
-textSmall{
+.subTitle{
+	font-weight: 700;
+	font-size: px-to-em(24);
+	line-height: px-to-per(28,24);
+	color: #2E3A59;
+
+	@media (max-width: 767px) {
+		font-size: px-to-em(16);
+		line-height: px-to-per(19,16);
+	}
+}
+
+.text{
+	font-weight: 400;
+	font-size: px-to-em(16);
+	line-height: 150%;
+	color: #2E3A59;
+}
+
+.textSmall{
 	font-weight: 400;
 	font-size: px-to-em(16);
 	line-height: px-to-per(19,16);

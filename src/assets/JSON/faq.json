@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "image": "img/icon1.svg",
+    "title": "Lorem ipsum, dolor sit amet adipisicing elit.",
+    "text": "Laboriosam quas, aut consectetur animi autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae delenit"
+  },
+  {
+    "id": 1,
+    "image": "img/icon2.svg",
+    "title": "Lorem ipsum, dolor sit amet adipisicing elit.",
+    "text": "Laboriosam quas, aut consectetur animi autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae delenit"
+  },
+  {
+    "id": 2,
+    "image": "img/icon3.svg",
+    "title": "Lorem ipsum, dolor sit amet adipisicing elit.",
+    "text": "Laboriosam quas, aut consectetur animi autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae delenit"
+  },
+  {
+    "id": 3,
+    "image": "img/icon4.svg",
+    "title": "Lorem ipsum, dolor sit amet adipisicing elit.",
+    "text": "Laboriosam quas, aut consectetur animi autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae delenit"
+  },
+  {
+    "id": 4,
+    "image": "img/icon5.svg",
+    "title": "Lorem ipsum, dolor sit amet adipisicing elit.",
+    "text": "Laboriosam quas, aut consectetur animi autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae delenit"
+  }
+]
