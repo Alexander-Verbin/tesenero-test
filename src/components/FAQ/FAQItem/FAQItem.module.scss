@@ -4,6 +4,9 @@
 	gap: 24px;
 	padding: 12px 0 10px;
 	cursor: pointer;
+	transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+	max-width: 704px;
+	width: 100%;
 
 	&:not(:last-child){
 		border-bottom: 1px solid #E7EBF0;
@@ -20,6 +23,20 @@
 		.FAQItem__title{
 			color: #00C368;
 		}
+		.FAQItem__icon{
+			align-self: start;
+		}
+		
+	}
+
+	&:hover{
+		.FAQItem__title{
+			color: #00C368;
+		}
+	}
+
+	&__title{
+		max-width: 479px;
 	}
 
 	&__icon{
@@ -37,19 +54,39 @@
 		object-fit: contain;
 	}
 
-	&__title{
 
+	&__info{
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+		width: 100%;
 	}
 
 	&__info_top{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		gap: 10px;
 	}
 
 	&__arrow{
 		width: 19px;
 		height: 10.5px;
-		//transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 	}
+
+	&__text{
+		display: block;
+		animation: fadeIn linear 0.3s forwards;
+
+		&.hidden{
+			display: none;
+		}
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0; }
+	100% {
+		opacity: 1; }
 }

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import "./SCSS/.mixins";
+
 *,
 *::before,
 *::after {
@@ -14,6 +15,7 @@ ol {
 	margin: 0;
 	padding: 0;
 }
+
 body,
 h1,
 h2,
@@ -33,24 +35,29 @@ dd {
 	margin: 0;
 	padding: 0;
 }
+
 body {
 	min-height: 100vh;
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
 }
+
 ul,
 ol {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
+
 a:not([class]) {
 	text-decoration-skip-ink: auto;
 }
+
 img {
 	max-width: 100%;
 	display: block;
 }
+
 input,
 button,
 textarea,
@@ -59,7 +66,7 @@ select {
 }
 
 input[type='number'] {
-	-moz-appearance:textfield;
+	-moz-appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
@@ -67,20 +74,20 @@ input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 }
 
-.container{
+.container {
 	max-width: 1800px;
 	padding: 0 25px;
 	margin: 0 auto;
 }
 
-.main{
+.main {
 	display: block;
 }
 
-.title{
+.title {
 	font-weight: 700;
 	font-size: px-to-em(40);
-	line-height: px-to-per(47,40);
+	line-height: px-to-per(47, 40);
 	text-align: center;
 	color: #2E3A59;
 	display: flex;
@@ -88,7 +95,7 @@ input::-webkit-inner-spin-button {
 	justify-content: center;
 	align-items: center;
 
-	&::before{
+	&::before {
 		content: '';
 		width: 100%;
 		max-width: 184px;
@@ -96,34 +103,36 @@ input::-webkit-inner-spin-button {
 		background: #00C368;
 	}
 
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		font-size: px-to-em(24);
-		line-height: px-to-per(28,24);
+		line-height: px-to-per(28, 24);
 	}
 }
 
-.subTitle{
+.subTitle {
 	font-weight: 700;
 	font-size: px-to-em(24);
-	line-height: px-to-per(28,24);
+	line-height: px-to-per(28, 24);
 	color: #2E3A59;
 
 	@media (max-width: 767px) {
 		font-size: px-to-em(16);
-		line-height: px-to-per(19,16);
+		line-height: px-to-per(19, 16);
 	}
 }
 
-.text{
+.text {
 	font-weight: 400;
 	font-size: px-to-em(16);
 	line-height: 150%;
 	color: #2E3A59;
 }
 
-.textSmall{
+.textSmall {
 	font-weight: 400;
 	font-size: px-to-em(16);
-	line-height: px-to-per(19,16);
+	line-height: px-to-per(19, 16);
 	color: #2E3A59;
 }
+
+br.big {display:block; content:""; margin-top:1px; line-height:190%; vertical-align:top;}

@@ -1,3 +1,26 @@
 .FAQ{
-	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+
+	&__head{
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+		margin-left: 48px;
+	}
+
+	&__title{
+		gap: 12px;
+	}
+
+	&__text{
+		display: block;
+	}
+
+	&__content{
+		display: block;
+	}
 }

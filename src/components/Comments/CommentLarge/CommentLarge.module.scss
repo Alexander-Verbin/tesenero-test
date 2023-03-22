@@ -1,0 +1,44 @@
+.CommentLarge{
+	display: flex;
+
+	&__inner{
+		&:first-child{
+			margin-right: 17px;
+		}
+		&:last-child{
+			align-self: flex-end;
+			transform: rotate(180deg);
+		}
+		svg{
+			fill:#00C368;
+		}
+	}
+
+	&__picture{
+		display: block;
+		flex: 0 0 213px;
+	}
+
+	&__image{
+		width: 100%;
+		object-fit: contain;
+	}
+
+	&__content{
+		display: flex;
+	}
+
+	&__text{
+		display: block;
+	}
+
+	&__name{
+		font-weight: 700;
+	}
+
+	&__info{
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+}

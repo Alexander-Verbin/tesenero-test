@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 import style from "./FAQItem.module.scss"
 
@@ -12,10 +12,10 @@ type PropsType = {
 	image: string
 	title: string
 	text: string
+	open: number
+	setOpen: (id:number) => void
 }
-export const FAQItem = ({image, title, text, id}: PropsType) => {
-
-	const [open, setOpen] = useState(2);
+export const FAQItem = ({image, title, text, id,open,setOpen}: PropsType) => {
 
 	return (
 		<div onClick={() => setOpen(id)} className={id === open ? `${style.FAQItem} ${style.active}` : style.FAQItem}>
@@ -27,7 +27,7 @@ export const FAQItem = ({image, title, text, id}: PropsType) => {
 					<h3 className={`${style.FAQItem__title} subTitle`}>{title}</h3>
 					<HandySvg className={style.FAQItem__arrow} src={arrow}/>
 				</div>
-				<p className={`${style.FAQItem__text} text`}>{text}</p>
+				<p className={id === open ? `${style.FAQItem__text} text` : `${style.FAQItem__text} ${style.hidden}`}>{text}</p>
 			</div>
 		</div>
 	)

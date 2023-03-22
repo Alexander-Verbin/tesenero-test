@@ -1,0 +1,26 @@
+.CommentSmall{
+	display: flex;
+	gap: 23px;
+
+	&.reverse{
+		flex-direction: row-reverse;
+	}
+
+	&__picture{
+		flex: 0 0 97px;
+	}
+	&__image{
+		width: 100%;
+		object-fit: contain;
+	}
+
+	&__content{
+		display: flex;
+		flex-direction: column;
+		gap: 29px;
+	}
+
+	&__name{
+		font-weight: 700;
+	}
+}
