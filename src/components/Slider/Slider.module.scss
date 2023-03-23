@@ -1,49 +1,51 @@
-.Slider{
- display: none;
- @media (max-width: 767px) {
-  display: block;
-  margin-top: 50px;
-  order: 2;
- }
+.Slider {
+	display: none;
+	@media (max-width: 767px) {
+		display: block;
+		margin-top: 50px;
+		order: 2;
+	}
 
- &__button{
-  display: block;
-  cursor: pointer;
-  padding: 0;
-  border: none;
-  background: rgba($color: #fff, $alpha: 0)
+	&__button {
+		display: block;
+		cursor: pointer;
+		padding: 0;
+		border: none;
+		background: rgba($color: #fff, $alpha: 0)
 
- }
+	}
 
- &__icon_prev{
-  width: 19px;
-  height: 10.5px;
-  transform: rotate(90deg);
- }
- &__icon_next{
-  width: 19px;
-  height: 10.5px;
-  transform: rotate(-90deg);
- }
+	&__icon_prev {
+		width: 19px;
+		height: 10.5px;
+		transform: rotate(90deg);
+	}
 
- &__controls{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 63px;
-  gap: 16px;
- }
+	&__icon_next {
+		width: 19px;
+		height: 10.5px;
+		transform: rotate(-90deg);
+	}
 
- &__pagination{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  max-width: fit-content;
- }
+	&__controls {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 56px;
+		gap: 16px;
+	}
 
- &__bullet{
-  min-width: 8px;
- }
+	&__pagination {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		max-width: fit-content;
+	}
+
+	&__bullet {
+		min-width: 8px;
+	}
+
 	:global(.swiper-pagination-bullet) {
 		background: #E7EBF0;
 		opacity: 1;
@@ -51,6 +53,11 @@
 
 	:global(.swiper-pagination-bullet.swiper-pagination-bullet-active) {
 		background: #A6ABBD;
+	}
+
+	:global(.swiper-slide) {
+		display: flex;
+		justify-content: center;
 	}
 
 }

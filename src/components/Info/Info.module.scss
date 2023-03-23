@@ -17,6 +17,10 @@
 			left: 0;
 			background: #F5F5F5;
 			z-index: -1;
+
+			@media (max-width: 1024px) {
+				width: 0;
+			}
 		}
 
 		&::after {
@@ -29,6 +33,10 @@
 			right: 0;
 			background: #F8FBFF;
 			z-index: -1;
+
+			@media (max-width: 1024px) {
+				width: 0;
+			}
 		}
 	}
 
@@ -36,6 +44,11 @@
 		display: flex;
 		padding-top: 95px;
 		padding-bottom: 101px;
+
+		@media (max-width: 1024px) {
+			flex-direction: column-reverse;
+			padding: 0;
+		}
 	}
 
 	&__block {
@@ -43,6 +56,23 @@
 
 		&:nth-child(1) {
 			padding-right: 62px;
+
+			@media (max-width: 1650px) {
+				padding-right: 25px;
+			}
+			@media (max-width: 1024px) {
+				padding: 27px 16px 36px;
+			}
+		}
+
+		&:nth-child(2) {
+			@media (max-width: 1650px) {
+				padding-left: 25px;
+			}
+			@media (max-width: 1024px) {
+				padding: 20px 18px 4px 14px;
+				background: #F8FBFF;
+			}
 		}
 	}
 }

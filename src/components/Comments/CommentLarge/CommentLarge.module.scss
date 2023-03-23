@@ -1,22 +1,60 @@
 .CommentLarge{
 	display: flex;
 
+	@media (max-width: 1024px) {
+		padding: 24px 16px 15px;
+		flex-direction: column;
+		background: #FFFFFF;
+		box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.24);
+		border-radius: 32px;
+		position: relative;
+	}
+
 	&__inner{
+		@media (max-width: 1024px) {
+			position: absolute;
+			top: 24px;
+		}
 		&:first-child{
 			margin-right: 17px;
+
+			@media (max-width: 1024px) {
+				margin-right: 0;
+				left: 16px;
+			}
 		}
 		&:last-child{
 			align-self: flex-end;
 			transform: rotate(180deg);
+
+			@media (max-width: 1024px) {
+				right: 16px;
+			}
 		}
 		svg{
 			fill:#00C368;
+
+			@media (max-width: 1024px) {
+				fill: #E7EBF0;
+			}
 		}
 	}
 
 	&__picture{
 		display: block;
 		flex: 0 0 213px;
+
+		@media (max-width: 1440px) {
+			flex: 0 0 135px;
+		}
+
+		@media (max-width: 1024px) {
+			flex: 0 0 auto;
+			max-width: 97px;
+			align-self: center;
+			margin-top: -65px;
+			margin-bottom: 30px;
+		}
 	}
 
 	&__image{
@@ -26,10 +64,19 @@
 
 	&__content{
 		display: flex;
+
+		@media (max-width: 1024px) {
+			flex-direction: column;
+		}
+
 	}
 
 	&__text{
 		display: block;
+
+		@media (max-width: 1024px) {
+			text-align: center;
+		}
 	}
 
 	&__name{
@@ -40,5 +87,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
+
+		@media (max-width: 1024px) {
+			align-items: center;
+			gap: 17px;
+		}
 	}
 }

@@ -5,11 +5,23 @@
 	align-items: center;
 	gap: 15px;
 
+	@media (max-width: 1024px) {
+		gap: 19px;
+	}
+
 	&__head{
 		display: flex;
 		flex-direction: column;
 		gap: 6px;
 		margin-left: 48px;
+
+		@media (max-width: 1650px) {
+			margin-left: 0;
+		}
+
+		@media (max-width: 1024px) {
+			gap: 20px;
+		}
 	}
 
 	&__title{
@@ -17,7 +29,7 @@
 	}
 
 	&__text{
-		display: block;
+		text-align: center;
 	}
 
 	&__content{

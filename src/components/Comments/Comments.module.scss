@@ -1,24 +1,59 @@
-.Comments{
+.Comments {
 	display: block;
 
-	&__title{
+	&__title {
 		gap: 18px;
 		margin-bottom: 48px;
 		margin-right: 34px;
+
+		@media (max-width: 1650px) {
+			margin-right: 0;
+		}
+
+		@media (max-width: 1024px) {
+			font-size: 1.4em;
+			margin-bottom: 93px;
+		}
 	}
 
-	&__large{
+	&__large {
 		margin-bottom: 134px;
 		margin-left: 30px;
+
+		@media (max-width: 1650px) {
+			margin-left: 0;
+		}
+		@media (max-width: 1024px) {
+			margin-bottom: 43px;
+		}
 	}
 
-	&__smalls{
+	&__smalls {
 		display: flex;
 		justify-content: center;
 		gap: 30px;
+
+		@media (max-width: 1650px) {
+			gap: 2px;
+		}
+		@media (max-width: 1024px) {
+			flex-direction: column-reverse;
+			gap: 33px;
+		}
 	}
 
-	&__small{
+	&__small {
 		flex: 0 0 350px;
+
+
+		@media (max-width: 1650px) {
+			flex: 0 0 45%;
+		}
+		@media (max-width: 1440px) {
+			flex: 0 0 50%;
+		}
+		@media (max-width: 1024px) {
+			flex: 0 0 auto;
+		}
 	}
 }

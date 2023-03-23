@@ -1,19 +1,22 @@
 @import "../../SCSS/.mixins";
 
-.MainBlock{
+.MainBlock {
 	background: linear-gradient(111.04deg, #E2E2E2 0.39%, rgba(255, 255, 255, 0) 86.46%);
+	overflow: hidden;
 
 	@media (max-width: 767px) {
 		background: #fff;
 	}
 
-	&__container{
+	&__container {
 		padding-top: 75px;
 		padding-bottom: 93px;
 
 		@media (max-width: 767px) {
 			display: flex;
 			flex-direction: column;
+			padding-top: 18px;
+			padding-bottom: 81px;
 		}
 	}
 
@@ -27,14 +30,18 @@
 			order: 1;
 			margin-top: 38px;
 			margin-bottom: 50px;
-			&::before{
+			margin-left: 0;
+			font-size: 1.44em;
+			margin-top: -28px;
+			margin-bottom: 0;
+			&::before {
 				width: 0;
 				height: 0;
 			}
 		}
 	}
 
-	&__content{
+	&__content {
 		width: 100%;
 
 		@media (max-width: 767px) {
@@ -42,12 +49,12 @@
 		}
 	}
 
-	&__block{
+	&__block {
 		display: flex;
 		align-items: flex-start;
 		justify-content: center;
 
-		&_first{
+		&_first {
 			gap: 109px;
 			margin-bottom: 36px;
 
@@ -55,17 +62,39 @@
 				display: none;
 			}
 		}
-		&_second{
+
+		&_second {
 			align-items: center;
+
+			.MainBlock__block_item {
+				&:first-child {
+					transform: translate(76px, -20px);
+
+					@media (max-width: 1024px) {
+						transform: translate(46px, -10px);
+					}
+				}
+
+				&:last-child {
+					transform: translate(-50px, -25px);
+
+					@media (max-width: 1024px) {
+						transform: translate(-30px, -15px);
+					}
+				}
+			}
 		}
 
-		&_third{
+		&_third {
 			margin-top: -71px;
 			margin-left: 20px;
 			gap: 102px;
 
-			& > .MainBlock__block_item:last-child{
+			& > .MainBlock__block_item:last-child {
 				flex: 0 0 199px;
+			}
+			@media (max-width: 1024px) {
+				margin-top: -25px;
 			}
 			@media (max-width: 767px) {
 				display: none;
@@ -73,21 +102,15 @@
 		}
 	}
 
-	&__block_item{
+	&__block_item {
 		flex: 0 0 179px;
 
-		&:nth-child(3){
-			 transform: translate(76px,-20px);
-		 }
-		&:nth-child(4){
-			transform: translate(-50px,-25px);
-		}
 		@media (max-width: 767px) {
 			display: none;
 		}
 	}
 
-	&__picture{
+	&__picture {
 		max-width: 567px;
 		margin-right: 16px;
 		margin-left: 35px;
@@ -97,10 +120,48 @@
 		}
 	}
 
-	&__image{
+	&__image {
 		height: 100%;
 		filter: drop-shadow(0px 40px 80px rgba(0, 0, 0, 0.16))
 	}
+
+
+	&__bgOne {
+		max-width: 442px;
+		left: 13% !important;
+		bottom: 0;
+
+		@media (max-width: 1650px) {
+			max-width: 350px;
+		}
+		@media (max-width: 1440px) {
+			max-width: 250px;
+			bottom: 10%;
+		}
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+
+	&__bgTwo {
+		max-width: 552px;
+		right: -14% !important;
+		left: auto !important;
+		top: 0;
+
+		@media (max-width: 1650px) {
+			max-width: 350px;
+			right: -10% !important;
+		}
+		@media (max-width: 1440px) {
+			max-width: 250px;
+			top: 10%;
+		}
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+
 }
 
 
