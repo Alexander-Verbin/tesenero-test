@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tesenero-test/static/css/main.8ee1094d.css",
+    "main.js": "/tesenero-test/static/js/main.b290286d.js",
+    "static/media/berry.png": "/tesenero-test/static/media/berry.f1a06e88881b20746fbb.png",
+    "static/media/bgTwo.png": "/tesenero-test/static/media/bgTwo.5584ca217081d01055eb.png",
+    "static/media/bgOne.png": "/tesenero-test/static/media/bgOne.5e4cba5fd5c6cf16b4c6.png",
+    "static/media/person.png": "/tesenero-test/static/media/person.3aa385571cb119f6590d.png",
+    "static/media/logo.svg": "/tesenero-test/static/media/logo.b2d494c1bf2bd110dbecd1547083c900.svg",
+    "static/media/icon3.svg": "/tesenero-test/static/media/icon3.d0fb210ef74f668788297ecf7550cdff.svg",
+    "static/media/icon4.svg": "/tesenero-test/static/media/icon4.7c8e57136cc3a7c01e0ee9e48ecf9543.svg",
+    "static/media/icon2.svg": "/tesenero-test/static/media/icon2.2527cd3fa8c25af0fd69dee38c28ffcc.svg",
+    "static/media/icon1.svg": "/tesenero-test/static/media/icon1.bf20d4dfb9466d89052f677faa2a80c1.svg",
+    "index.html": "/tesenero-test/index.html",
+    "static/media/arrow.svg": "/tesenero-test/static/media/arrow.8af452acf21e42c75b0b85e6e1686a53.svg",
+    "main.8ee1094d.css.map": "/tesenero-test/static/css/main.8ee1094d.css.map",
+    "main.b290286d.js.map": "/tesenero-test/static/js/main.b290286d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ee1094d.css",
+    "static/js/main.b290286d.js"
+  ]
+}
